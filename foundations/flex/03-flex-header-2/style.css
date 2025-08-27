@@ -22,12 +22,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 16px;
 }
 
 .header-right {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
@@ -66,4 +68,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 16px;
+  display: flex;
 }

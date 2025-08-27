@@ -9,6 +9,7 @@ img {
 
 .images {
   display: flex;
+  gap: 52px;
 }
 
 .title {
@@ -16,6 +17,7 @@ img {
   font-weight: 900;
   display: flex;
   justify-content: center;
+  gap: 32px;
 }
 
 /* do not edit this footer */

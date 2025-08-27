@@ -27,7 +27,6 @@ img {
 
 .text {
   display: flex;
-  flex-wrap: wrap;
   align-self: center;
   margin-top: 8px;
 }

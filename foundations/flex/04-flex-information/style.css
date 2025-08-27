@@ -5,12 +5,16 @@ body {
 img {
   width: 100px;
   height: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .images {
   display: flex;
   gap: 52px;
   flex-basis: 200px;
+  flex-direction: row;
+  align-items: center;
 }
 
 .text {

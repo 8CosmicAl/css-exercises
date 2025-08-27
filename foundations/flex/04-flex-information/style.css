@@ -10,6 +10,13 @@ img {
 .images {
   display: flex;
   gap: 52px;
+  flex-basis: 200px;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
 }
 
 .title {

@@ -22,11 +22,9 @@ img {
   flex-direction: column;
   align-items: center;
   max-width: 200px;
-  flex-wrap: wrap;
 }
 
 .text {
-  display: flex;
   align-self: center;
   margin-top: 8px;
 }

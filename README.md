@@ -1,34 +1,35 @@
-# CSS Exercises
+# The Holy Grail of Layout
 
-These exercises consist of a series of CSS-related tasks intended to complement the HTML and CSS content on The Odin Project (TOP). They should only be completed when instructed during the course of the curriculum.
+In this last flexbox exercise you're going to recreate an incredibly common website layout. It is so common that it is often called the [Holy Grail](https://www.google.com/search?q=holy+grail+layout&tbm=isch&sclient=img) layout... and with flexbox it is actually pretty easy to pull off.
 
-When doing these exercises, please use all documentation and resources you need to accomplish them. You are _not_ intended to have any of this stuff memorized at this point. Check the docs, use Google, and do what you need to do (besides checking the solutions) to get them done.
+As with the previous exercise, we've left a little more for you to do.
 
-> [!IMPORTANT]
-> We encourage you to practice your git skills by committing your changes and pushing them to your own fork.  However, please **DO NOT** open a Pull Request to have your solutions merged into this repo or to show your solution.  If we were to merge your changes the exercises would no longer be available as intended for new learners, and opening a PR only causes additional work for us, as we have to close it without merging.
+### Hints
+- You will need to change the flex-direction to push the footer down.
+- You will need to add some divs as containers to get things to line up correctly.
+- `flex-wrap` will help get the cards aligned correctly.
+-  Make sure you define how much space the cards should take up, in order for `flex-wrap` to work as intended.
 
-## Contributing
+## Desired outcome
 
-If you have suggestions to improve an exercise, ideas for a new exercise, or notice an issue with an exercise, please feel free to open an issue after thoroughly reading our [contributing guide](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md).
+![desired outcome](./desired-outcome.png)
 
-## How To Use These Exercises
+The number of cards lined up in that section will change based on the width of your screen, so don't stress about getting _exactly_ a 2x3 or 3x2 grid.
 
-1. Fork and clone this repository. To learn how to fork a repository, see the GitHub documentation on how to [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-    - Copies of repositories on your machine are called clones. If you need help cloning to your local environment, you can learn how from the GitHub documentation on [cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
-1. Go to an exercise directory and open the HTML file in a web browser. You can open the file directly or use something like VSCode's Live Server extension.
-1. For each exercise, read the README thoroughly before starting any work.
-    - Each README has a "Self Check" list. Use this to ensure you haven't missed any important details in your implementation.
-1. Make your edits in the `index.html` and/or the `style.css` files in order to make the output in your browser look like the Desired Outcome image(s).
-    - Depending on the instructions of the exercise, you may only need to make edits in one of these files.
-1. Once you successfully finish an exercise, check TOP's solution to compare it with yours.
-    - You should not be checking the solution for an exercise until you finish it!
-    - If your solution differs wildly from TOP's solution (and still passes the exercise's requirements), that's completely fine. Do feel free to ask about it in our Discord if there are parts you do not understand.
+On a smaller screen it will look like this:
 
-> [!IMPORTANT]
-> Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
+![smaller](./desired-outcome-smaller.png)
 
-## Some Hints
-- The official solutions put all changes at the _end_ of the CSS file, which may duplicate some selectors (e.g. there might be a `body {}` in the given CSS and another `body {}` in the solution). When you are working on an exercise, it is best practice to add your CSS to existing selectors instead of duplicating them at the end of the file. We're sacrificing this best practice in our official solutions to make it extra clear to you what things we changed to solve the exercise.
-- Unless listed in the self-check section, do not worry about getting the exact pixel value for things like margin, padding and font size. These exercises are intended to test your knowledge of CSS, not your ability to guess that a screenshot is using `font: sans-serif bold 16px` or that the margin is _exactly_ `42px`.
-- You may need to add some elements to your HTML to get things into the right spot. (For the first few exercises, we make it explicit when this needs to happen.)
-- You may need to add more selectors to your CSS file. The first few exercises have almost everything already done for you, but as you progress, you'll find that you need to add more and more selectors to get the correct result.
+Note: The emojis may instead show up as one or several text symbols (e.g. &#9734;&#9794;) if you don't have an emoji-based font family installed on your operating system. This does not affect the exercise and can be ignored.
+
+### Self Check
+- The header text is size 32px and weight 900.
+- The header text is vertically centered and 16px from the edge of the screen.
+- The footer is pushed to the bottom of the screen (the footer may go _below_ the bottom of the screen if the content of the 'cards' section overflows and/or if your screen is shorter).
+- The footer text is centered horizontally and vertically.
+- The sidebar and cards take up all available space above the footer.
+- The sidebar is 300px wide (and it doesn't shrink).
+- The sidebar links are size 24px, are white, and do not have the underline text decoration.
+- The sidebar has 16px padding.
+- There is 48px padding around the 'cards' section.
+- The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page.

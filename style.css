@@ -7,6 +7,15 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
 .header,
 .footer {
   display: flex;

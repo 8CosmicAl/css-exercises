@@ -18,6 +18,10 @@ body {
   gap: 16px;
 }
 
+button {
+  padding: 8px 24px;
+}
+
 .header,
 .footer {
   display: flex;

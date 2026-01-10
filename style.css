@@ -37,17 +37,24 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-shrink: 0;
+  padding: 16px;
 }
 
 ul {
   list-style: none;
   font-size: 24px;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: #eee;
+}
+
+li {
+  margin-bottom: 16px;
 }
 
 .card {

@@ -17,6 +17,11 @@ body {
   padding-left: 16px;
 }
 
+.body {
+  display: flex;
+  flex: 1;
+}
+
 .footer {
   height: 72px;
   background: #eee;
